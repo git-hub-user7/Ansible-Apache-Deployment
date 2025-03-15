@@ -106,18 +106,27 @@ curl http://localhost
 ### OR
 Open `http://localhost` in your browser.
 
+---
+
 ## 📜 Conclusion
 
 This project showcases my ability to:
--🔹 Automate infrastructure using Ansible.
--🔹 Work in hybrid Windows-Linux environments.
--🔹 Document technical processes clearly.
+
+- 🔹 Automate infrastructure using Ansible.
+  
+- 🔹 Work in hybrid Windows-Linux environments.
+
+- 🔹 Document technical processes clearly.
+
+---
 
 ## Future Enhancements:
 
 -Extend to cloud platforms (AWS/Azure).
 
 -Integrate with CI/CD pipelines (Jenkins/GitHub Actions).
+
+---
 
 ## 👨💻 Author  
 [DHWARAKESH SRINIVASAN]  
