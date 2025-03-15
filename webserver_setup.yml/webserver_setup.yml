@@ -1,0 +1,29 @@
+---
+- name: Automate Web Server Setup
+  hosts: webservers
+  become: yes
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install Apache
+      apt:
+        name: apache2
+        state: present
+
+    - name: Start Apache
+      service:
+        name: apache2
+        state: started
+        enabled: yes
+
+    - name: Check Apache status
+      uri:
+        url: http://localhost
+      register: result
+      failed_when: result.status != 200
+
+    - name: Show result
+      debug:
+        var: result.status
